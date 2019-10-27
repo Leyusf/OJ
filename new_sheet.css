@@ -441,21 +441,25 @@ div img:hover{
 }
 .input_box{
     width: 90%;
-    height:80%;
     background-color: #fff;
 }
 #text_size{
     height: 90%;
-    width: 80%;
+    width: 100%;
     margin-left: 2rem;
 }
 #text_font{
     font-size: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    overflow: auto;
+    word-break: break-all;
 }
 #sub{
     outline:none;
-    margin-top: -2rem;
+    align-self: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-size: 1.5rem;
     height: 4rem;
     color: white;

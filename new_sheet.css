@@ -8,8 +8,11 @@ body{
      position:fixed;
      z-index:999;
 }
+pre{
+    font-size: 1.4rem;
+}
 table{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     border: none;
     width: 100%;
     height: 100%;
@@ -24,6 +27,9 @@ tr{
 td{
     width: 10%;
     height: 100%;
+}
+address{
+    display: inline;
 }
 .no_underline{
     text-decoration: none;
@@ -307,11 +313,16 @@ div img:hover{
     border-bottom:1px solid rgba(0,0,0,.125);
 }
 .div_diff{
-    width: 40px;
+    margin-left: 15%;
+    width: 50px;
     text-align:center;
 }
 #problem_list_word{
     font-size: 1.5rem;
+    margin-left: 10%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 #color_b{
     color: black;
@@ -394,25 +405,19 @@ div img:hover{
     text-align: left;
 }
 .problem_dis{
-    position:relative;
     display:flex;
     flex-direction:column;
     min-width:0;
-    word-wrap:break-word;
     background-color:#fff;
     border:1px solid rgba(0,0,0,.125);
 }
 .E_font{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #596063;
     text-align: left;
 }
 #word_color{
     color: rgb(0, 0, 206);
-    height: 0.1rem;
-}
-#li_height{
-    height: 0.1rem;
 }
 .example{
     width:40%;
@@ -426,7 +431,6 @@ div img:hover{
 }
 #example_color{
     color: rgb(168, 0, 93);
-    height: 0.1rem;
 }
 .language{
     height: 3rem;
@@ -486,7 +490,7 @@ div img:hover{
 .rotate{
     margin-top: 25px;
     margin-left: 25px;
-    -webkit-animation:rotateImg 2.5s linear infinite;
+    animation:rotateImg 2.5s linear infinite;
     width: 40px ;
     height: 40px;
     border: 0px solid #ccc;
@@ -503,4 +507,7 @@ div img:hover{
 #color_font_r{
     color: red;
     font-weight: bold;
+}
+.wrap{
+    word-wrap:break-word;
 }

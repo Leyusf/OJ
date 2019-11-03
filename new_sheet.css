@@ -31,6 +31,13 @@ td{
 address{
     display: inline;
 }
+p{
+    margin-left: 5%;
+    white-space:pre-wrap;
+}
+.p_ok{
+    white-space: initial;
+}
 .no_underline{
     text-decoration: none;
     color: floralwhite;
@@ -365,6 +372,10 @@ div img:hover{
 }
 .margin_r{
     margin-right: 40%;
+    opacity:0.65;
+}
+.margin_r:hover{
+    opacity: 1.0;
 }
 .home_hr {
     margin-top: 3rem;
@@ -510,4 +521,123 @@ div img:hover{
 }
 .wrap{
     word-wrap:break-word;
+}
+.head_portrait{
+    margin-left: 5%;
+    
+}
+.head_portrait:hover{
+    transform: scale(1.0); 
+}
+.fill_div_user{
+    margin-left: 5%;
+    margin-top: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-shadow:6px 6px 5px silver;
+    background-color:whitesmoke;
+    width:90%;
+    align-self: center;
+}
+.bgc_gainsboro{
+    background-color:gainsboro;
+}
+.hp_box, .user_info{
+    margin-left: 5%;
+    display: inline-block;
+}
+.user_info{
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 20%;
+}
+.name{
+    padding-left: 5%;
+    font-size: 1.5rem;
+    font-style: initial;
+}
+#it{
+    font-style: italic;
+    color: rgba(7, 7, 7, 0.308);
+}
+#logo{
+    width: 60%;
+    text-align: left;
+    font-size: 1rem;
+    color: rgb(235, 0, 0);
+}
+.fill_div_sides{
+    margin-left: 5%;
+    margin-top: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width:25%;
+    display: inline-block;
+}
+.fill_div_side{
+    margin-top: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-shadow:6px 6px 5px silver;
+    background-color:whitesmoke;
+}
+.fill_div_container{
+    margin-left: 3%;
+    padding-left: 2%;
+    padding-right: 4%;
+    margin-top: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-shadow:6px 6px 5px silver;
+    width:55.5%;
+    background-color:whitesmoke;
+    display: inline-block;
+}
+.p_user{
+    margin-left: 10%;
+    white-space: initial;
+    font-size: 1.2rem;
+}
+.p_des{
+    margin-left: 10%;
+    white-space: initial;
+    font-size: .8rem;
+}
+.img_p{
+    padding-left: 10%;
+    display: inline;
+}
+span{
+    font-size: 1.2rem;
+    display: inline-flex;
+}
+.p_img{
+    float: right;
+    padding-left: 5%;
+    margin-right: 20%;
+}
+#size{
+    font-size: 1.5rem;
+    text-align: left;
+}
+.logout{
+    margin-left: 35%;
+    margin-bottom: 5%;
+    border-radius: 5%;
+    border: 1px solid black;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 30%;
+    height: 5%;
+    color: tomato;
+}
+#bg{
+    background: url("bg.png");
+    background-size: 185px, 150px;
+    background-repeat: space;
+}
+.go_center{
+    text-align: center;
 }

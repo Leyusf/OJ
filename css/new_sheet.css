@@ -661,3 +661,6 @@ span{
     text-align: left;
     line-height: 2.75rem;
 }
+code{
+    margin-left: 5%;
+}

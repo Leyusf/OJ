@@ -71,15 +71,15 @@ There are three laws:<br/>
                     <p class="content p_ok learning">
 In a function, if assigning a value to a list which as an argument will result in a new copy.<br/>
 e.g:<br/></p>
-                            <code><pre>
-                                def function(nums):
-                                    tmp = [1,2]
-                                    print(id(tmp))
-                                    nums = tmp[:]
-                                    print(id(nums))
-                                    nums[:] = tmp[:]
-                                    print(id(nums))</pre>
-                            </code><br/>
+            <code><pre>
+                def function(nums):
+                    tmp = [1,2]
+                    print(id(tmp))
+                    nums = tmp[:]
+                    print(id(nums))
+                    nums[:] = tmp[:]
+                    print(id(nums))</pre>
+            </code><br/>
                     <p class="content p_ok learning">
 The first id is a1, the second id is a2 and the third id is a1.<br/>
 Therefore, if we want to give a value to nums,<br/>
@@ -108,15 +108,15 @@ Assumed the number of k just appeared once and the array has n numbers.<br/>
 Then a1^a2^a3...^an = k<br/>
 Because same numbers will be 0 and finilly the formula will be 0^k = k<br/>
 Code:<br/></p>
-                            <code><pre>
-                                int FindOnceNumber (int a[])
-                                {
-                                    int res = 0;
-                                    for (int x:a)
-                                        res = res ^ x;
-                                    return res;
-                                }
-                            </pre></code>
+            <code><pre>
+                int FindOnceNumber (int a[])
+                {
+                int res = 0;
+                for (int x:a)
+                    res = res ^ x;
+                return res;
+                }
+            </pre></code>
                     <div class="card_speaker">
                         <div class="speaker">
                             <small>

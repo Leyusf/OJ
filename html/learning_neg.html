@@ -1,0 +1,151 @@
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="../css/new_sheet.css" />
+    </head>
+    <body>
+        <div class="navigation">
+            <table>
+                <tr>
+                    <td class="GLW">Good Learning Web</td>
+                    <td align="center" class="menu">
+                        <a href="index_neg.html" class="no_underline"><div>HOME</div></a>
+                    </td>
+                    <td align="center" class="menu">
+                        <a href="problem1_neg.html" class="no_underline"><div>Problems</div></a>
+                    </td>
+                    <td align="center" class="menu">
+                        <a href="learning_neg.html" class="no_underline"><div>Learning</div></a>
+                    </td>
+                    <td align="center" class="menu">
+                        <a href="user_neg.html" class="no_underline"><div>User</div></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <a name="top"></a>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="fill_div"></div>
+        <div class="container">
+            <div class="card">
+                <div class="card_header A_font">
+                    <li font-size=2rem>Learning</li>
+                </div>
+                <div>
+                    <li class="title B_font">XOR of bit operation</li>
+                    <p class="content p_ok learning">
+What is XOR?<br/>
+The operation of XOR will compare the same bit from two numbers,<br/>
+if the bit is different, there will be 1,else there will be 0.<br/>
+e.g:<br>
+3 = 11(B)<br/>
+2 = 10(B)<br/>
+3 ^ 2 = 11(B) ^ 10(B) = 01(B) = 1<br/>
+There are three laws:<br/>
+(1)Commutative law: a^b^c = a^c^b<br/>
+(2)Any number XOR = itself: n^0 = n<br/>
+(3)Two same ame numbers XOR each them = 0: n^n = 0<br/>      
+                    </p>
+                    <div class="card_speaker">
+                        <div class="speaker">
+                            <small>
+                                <a href="ythy.html" class="C_font">
+                                    ythy
+                                </a>
+                                @<span>2019-11-2 19:50</span>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <hr class="home_hr"/>
+                <div>
+                    <li class="title B_font">Copying list in python</li>
+                    <p class="content p_ok learning">
+In a function, if assigning a value to a list which as an argument will result in a new copy.<br/>
+e.g:<br/></p>
+                            <code><pre>
+                                def function(nums):
+                                    tmp = [1,2]
+                                    print(id(tmp))
+                                    nums = tmp[:]
+                                    print(id(nums))
+                                    nums[:] = tmp[:]
+                                    print(id(nums))</pre>
+                            </code><br/>
+                    <p class="content p_ok learning">
+The first id is a1, the second id is a2 and the third id is a1.<br/>
+Therefore, if we want to give a value to nums,<br/>
+we should use nums[:], not num.<br/>
+                    </p>
+                    <div class="card_speaker">
+                        <div class="speaker">
+                            <small>
+                                <a href="ythy.html" class="C_font">
+                                    ythy
+                                </a>
+                                @<span>2019-11-4 16:21</span>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <hr class="home_hr"/>
+                <div>
+                    <li class="title B_font">Use of XOR</li>
+                    <p class="content p_ok learning">
+There is a example about XOR:<br/>
+In an array, only one number appears once,and the rest two times.<br/>
+Find out the number.<br/>
+We can use XOR, the question will be very simple.<br/>
+Assumed the number of k just appeared once and the array has n numbers.<br/>
+Then a1^a2^a3...^an = k<br/>
+Because same numbers will be 0 and finilly the formula will be 0^k = k<br/>
+Code:<br/></p>
+                            <code><pre>
+                                int FindOnceNumber (int a[])
+                                {
+                                    int res = 0;
+                                    for (int x:a)
+                                        res = res ^ x;
+                                    return res;
+                                }
+                            </pre></code>
+                    <div class="card_speaker">
+                        <div class="speaker">
+                            <small>
+                                <a href="ythy.html" class="C_font">
+                                    ythy
+                                </a>
+                                @<span>2019-11-6 16:30</span>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fill_div up">
+            <div class="margin_r">
+                <a href="#top">
+                    <img src="../img/up.png" alt="go to top" title="go to top" align ="right" width="50" height="50" transition=" all 0.6s">
+                </a>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="D_font" >
+        <p id="text_pos">
+powered by Leyu ZHANG
+        </p>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css" href="../css/new_sheet.css" />
+    </head>
+    <body id="problem_body">
+        <div class="navigation">
+            <table>
+                    <tr>
+                            <td class="GLW">Good Learning Web</td>
+                            <td align="center"class="menu">
+                                <a href="../index.html" class="no_underline"><div>HOME</div></a>
+                            </td>
+                            <td align="center" class="menu">
+                                <a href="problem1.html" class="no_underline"><div>Problems</div></a>
+                            </td>
+                            <td align="center" class="menu">
+                                <a href="learning_act.html" class="no_underline"><div>Learning</div></a>
+                            </td>
+                            <td align="center" class="menu">
+                                <a href="user_act.html" class="no_underline"><div>User</div></a>
+                            </td>
+                        </tr>
+            </table>
+        </div>
+        <div>
+            <a name="top"></a>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="fill_div"></div>
+        <div class="container">
+            <div class="problem_dis">
+                <li class="A_font" id="li_height">     P1008     Last Digits</li>
+                <div>
+                <li class="A_font list_ok" id="word_color">Description</li>
+                    <li class="E_font" id="li_height">Exponentiation of one integer by another often produces very large results.</li> 
+                    <li class="E_font" id="li_height">In this problem, we will compute a function based on repeated exponentiation,</li>
+                    <li class="E_font" id="li_height">but output only the last n digits of the result. Doing this efficiently </li>
+                    <li class="E_font" id="li_height">requires careful thought about how to avoid computing the full answer. </li>
+                    <li class="E_font" id="li_height">Given integers b, n, and i, we define the function f(x) recursively </li>
+                    <li class="E_font" id="li_height">by f(x) = b^f(x-1) if x > 0, and f(0)=1. </li>
+                    <li class="E_font" id="li_height">Your job is to efficiently compute the last n decimal digits of f(i). </li>
+                </div>
+                <div>
+                    <li class="A_font list_ok" id="word_color">Input</li>
+                    <li class="E_font" id="li_height">The input consists of a number of test cases. Each test case starts</li>
+                    <li class="E_font" id="li_height">with the integer b (1 <= b <= 100) called the\nbase. On the next line is</li>
+                    <li class="E_font" id="li_height">the integer i (1 <= i <= 100) called the iteration count. And finally,</li>
+                    <li class="E_font" id="li_height">followed N lines, each contains a word whose length is less than 30 and no space </li>
+                    <li class="E_font" id="li_height">the last line\ncontains the number n (1 <= n <= 7), </li>
+                    <li class="E_font" id="li_height">which is the number of decimal digits to output. The input is terminated\nwhen b = 0.</li>
+                </div>
+                <div>
+                </div>
+                <li class="A_font list_ok" id="word_color">Output</li>
+                <li class="E_font" id="li_height">For each test case, print on one line the last n digits of f(i) for the base b specified. </li>
+                <li class="E_font" id="li_height">If the result has fewer than\nn digits, pad the result with zeroes on the left so that </li>
+                <li class="E_font" id="li_height">there are exactly n digits.</li>
+                <div class="example">
+                    <li class="E_font" id="example_color">Sample Input 1</li>
+                    <div class="example_box">
+<pre>
+    2
+    4
+    7
+    10
+    10
+    6
+    3
+    10
+    7
+    0</pre>
+                    </div>
+                </div>
+                <div class="example">
+                    <li class="E_font" id="example_color">Sample Output 1</li>
+                    <div class="example_box">
+<pre>
+    0065536
+    000000
+    4195387</pre>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="problem_dis">
+                <div class="language">
+                    <p>Language:</p>
+                </div>
+                <div class="language">
+                    <select name="language" class="selection">
+                        <option value="C" selected>C</option>
+                        <option value="C++">C++</option>
+                        <option value="Python2">Python2</option>
+                        <option value="Python3">Python3</option>
+                    </select>
+                </div>
+                <div class="input_box">
+                    <div id="text_size">
+                        <textarea rows="22" cols="50" spellcheck="false" id="text_font"></textarea>
+                    </div>
+                    <div>
+                        <a href="judge.html">
+                            <input type="button" value="submit" id="sub">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fill_div up">
+            <div class="margin_r">
+                <a href="#top">
+                    <img src="../img/up.png" alt="go to top" title="go to top" align ="right" width="50" height="50" transition=" all 0.6s" >
+                </a>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="D_font" >
+            <p id="text_pos">
+                powered by Leyu ZHANG
+            </p>
+        </div>
+        </body>
+</html>

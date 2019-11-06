@@ -36,10 +36,11 @@ p{
     white-space:pre-wrap;
 }
 td>a>div{
+    text-align: center;
     margin-top: -1%;
     height: 100%;
     width: 100%;
-    padding-top: 20%;
+    padding-top: 15%;
 }
 .p_ok{
     white-space: initial;
@@ -154,7 +155,8 @@ div img{
     transition: all 0.6s;  
 }  
 div img:hover{  
-    transform: scale(1.4);  
+    transform: scale(1.4);
+     
 }
 .column{
     width:40%;
@@ -327,8 +329,7 @@ div img:hover{
 }
 .div_diff{
     margin-left: 15%;
-    width: 50px;
-    text-align:center;
+    width: 55px;
 }
 #problem_list_word{
     font-size: 1.5rem;
@@ -480,7 +481,7 @@ div img:hover{
     outline:none;
     align-self: center;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 1.5rem;
     height: 4rem;
     color: white;
@@ -627,21 +628,25 @@ span{
     text-align: left;
 }
 .logout{
-    background-color: #fff;
+    background-color: #38a1d1b7;
     margin-left: 35%;
     margin-bottom: 5%;
     border-radius: 5%;
     border: 1px solid black;
     padding-top: 3%;
-    padding-bottom: 2%;
     text-align: center;
     font-size: 1.5rem;
     width: 30%;
     height: 5%;
-    color: tomato;
+}
+.logout a{
+    color: rgb(49, 48, 48);
+}
+.logout a:hover{
+    color: rgb(48, 48, 47);
 }
 #bg{
-    background: url("../img/bg.png");
+    background-color: whitesmoke;
     background-size: 185px, 150px;
     background-repeat: space;
 }
@@ -650,4 +655,9 @@ span{
 }
 .login{
     color: rgb(0, 145, 145);
+}
+.learning{
+    margin-left: 15%;
+    text-align: left;
+    line-height: 2.75rem;
 }

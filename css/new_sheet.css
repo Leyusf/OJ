@@ -423,7 +423,6 @@ div img:hover{
     text-align: left;
 }
 .problem_dis{
-    display:flex;
     flex-direction:column;
     min-width:0;
     background-color:#fff;
@@ -466,7 +465,6 @@ div img:hover{
     background-color: #fff;
 }
 #text_size{
-    height: 90%;
     width: 100%;
     margin-left: 2rem;
 }
@@ -663,4 +661,7 @@ span{
 }
 code{
     margin-left: 5%;
+}
+.submit{
+    margin-top: 5%;
 }

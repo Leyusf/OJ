@@ -1,6 +1,8 @@
 <html>
     <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
             <link rel="stylesheet" type="text/css" href="../css/new_sheet.css" />
+            <script src="../javascript/script.js"></script>
     </head>
     <body id="problem_body">
         <div class="navigation">
@@ -69,8 +71,8 @@
                     <p>Language:</p>
                 </div>
                 <div class="language">
-                    <select name="language" class="selection">
-                        <option value="C" selected>C</option>
+                    <select name="language" class="selection" id="select">
+                        <option value="javascript" selected>javascript</option>
                         <option value="C++">C++</option>
                         <option value="Python2">Python2</option>
                         <option value="Python3">Python3</option>
@@ -78,13 +80,16 @@
                 </div>
                 <div class="input_box">
                     <div id="text_size">
-                        <textarea rows="22" cols="50" spellcheck="false" id="text_font"></textarea>
+                        <textarea rows="22" cols="50" spellcheck="false" id="text_font">// please finish the function and return result.
+function solution(a,b)
+{
+
+};</textarea>
                     </div>
                     <div>
-                        <a href="judge.html">
-                            <input type="button" value="submit" id="sub">
-                        </a>
+                        <input type="button" value="submit" id="sub" onclick="vaild_language(1)">
                     </div>
+                    <script id="demo"></script>
                 </div>
             </div>
         </div>

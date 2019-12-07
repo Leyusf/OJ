@@ -1,6 +1,8 @@
 <html>
     <head>
-            <link rel="stylesheet" type="text/css" href="../css/new_sheet.css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+        <link rel="stylesheet" type="text/css" href="../css/new_sheet.css" />
+        <script src="../javascript/script.js"></script>
     </head>
     <body class="bgc_gainsboro">
         <div class="navigation">
@@ -27,12 +29,23 @@
             <br/>
             <br/>
             <br/>
+            <div id = "locksc"></div>
+            <div id = "login">
+                <div><h2>User Login<img src="../img/close.png" title="close" alt="close" id="close" onclick="img_close()"></h2></div>
+                <form name="login">
+                    <div>Account ：<input type="test" name="account" id="account"></div>
+                    <br>
+                    <div>Password：<input type="password" name="account" id="password"></div>
+                    <br>
+                    <input type="button" value="Login" class="lg_button" onclick="login_account()"><br><br><input type="button" value="Register" class="lg_button" onclick="register()">
+                </form>
+            </div>
             <div class="fill_div_user go_center">
                 <span>You are not logged in!</span>
             </div>
             <br/>
             <div class="fill_div_user go_center">
-                <a href="user_act.html" class="no_underline login"><span>Login</span></a> 
+                <a onclick="lock()" class="no_underline login"><span>Login</span></a> 
             </div>
         </div>
     <div class="D_font" >

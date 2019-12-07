@@ -63,6 +63,14 @@
                         <pre>  -1</pre>
                     </div>
                 </div>
+                <div class="test">
+                    <div>
+                        <input type="checkbox" name = "test" id="test"  onclick="test_box(2)">
+                            <label for="test">Custom test cases</label>
+                    </div>
+                    <div id="test_box"></div>
+                    <script id="code"></script>
+                </div>
             </div>
             <br/>
             <br/>
@@ -71,7 +79,7 @@
                     <p>Language:</p>
                 </div>
                 <div class="language">
-                    <select name="language" class="selection" id="select">
+                    <select name="language" class="selection" id="select" onchange="vaild_language()">
                         <option value="javascript" selected>javascript</option>
                         <option value="C++">C++</option>
                         <option value="Python2">Python2</option>
@@ -80,16 +88,15 @@
                 </div>
                 <div class="input_box">
                     <div id="text_size">
-                            <textarea rows="22" cols="50" spellcheck="false" id="text_font">// please finish the function and return result.
+                            <textarea rows="22" cols="50" spellcheck="false" id="text_font">/* please finish the function and return result.*/
 function solution(a,b)
 {
 
 };</textarea>
                     </div>
                     <div>
-                        <input type="button" value="submit" id="sub" onclick="vaild_language(2)">
+                        <input type="button" value="submit" id="sub" onclick="show(2)">
                     </div>
-                    <script id="demo"></script>
                 </div>
             </div>
         </div>

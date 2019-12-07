@@ -1,6 +1,8 @@
 <html>
     <head>
-            <link rel="stylesheet" type="text/css" href="../css/new_sheet.css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+        <link rel="stylesheet" type="text/css" href="../css/new_sheet.css" />
+        <script src="../javascript/script.js"></script>
     </head>
     <body id="problem_body">
         <div class="navigation">
@@ -36,42 +38,41 @@
         <div class="fill_div"></div>
         <div class="container">
             <div class="problem_dis">
-                <li class="A_font" id="li_height">     P1006     Happy 2004</li>
+                <li class="A_font" id="li_height">     P1006     Single Number</li>
                 <div>
                 <li class="A_font list_ok" id="word_color">Description</li>
-                    <li class="E_font" id="li_height">Consider a positive integer X,and let S be the sum of all positive integer divisors </li>
-                    <li class="E_font" id="li_height">of 2004^X. Your job is to determine S modulo 29 (the rest of the division of </li>
-                    <li class="E_font" id="li_height">by 29).</li>
-                    <li class="E_font" id="li_height">Take X = 1 for an example. The positive integer divisors of 2004^1 are 1, 2, 3, 4, 6,</li>
-                    <li class="E_font" id="li_height">12, 167, 334, 501, 668, 1002 and 2004. Therefore S = 4704 and S modulo 29 is equal to 6.</li>
+                    <li class="E_font" id="li_height">Given a non-empty array of integers, every element appears twice except for one. Find that single one.</li>
+                    <li class="E_font" id="li_height">Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?</li>
                 </div>
                 <div>
                     <li class="A_font list_ok" id="word_color">Input</li>
-                    <li class="E_font" id="li_height">The input consists of several test cases. Each test case contains a line with the </li>
-                    <li class="E_font" id="li_height">X (1 <= X <= 10000000). </li>
-                    <li class="E_font" id="li_height">A test case of X = 0 indicates the end of input, and should not be processed.</li>
+                    <li class="E_font" id="li_height">An array</li>
                 </div>
                 <div>
                 </div>
                 <li class="A_font list_ok" id="word_color">Output</li>
-                <li class="E_font" id="li_height">For each test case, in a separate line, please output the result of S modulo 29.
-                    </li>
+                <li class="E_font" id="li_height">A number</li>
                 <div class="example">
                     <li class="E_font" id="example_color">Sample Input 1</li>
                     <div class="example_box">
 <pre>
-    1
-    10000
-    0</pre>
+    [2,2,1]</pre>
                     </div>
                 </div>
                 <div class="example">
                     <li class="E_font" id="example_color">Sample Output 1</li>
                     <div class="example_box">
 <pre>
-    6
-    10</pre>
+    1</pre>
                     </div>
+                </div>
+                <div class="test">
+                    <div>
+                        <input type="checkbox" name = "test" id="test"  onclick="test_box(6)">
+                            <label for="test">Custom test cases</label>
+                    </div>
+                    <div id="test_box"></div>
+                    <script id="code"></script>
                 </div>
             </div>
             <br/>
@@ -81,8 +82,8 @@
                     <p>Language:</p>
                 </div>
                 <div class="language">
-                    <select name="language" class="selection">
-                        <option value="C" selected>C</option>
+                    <select name="language" class="selection" id="select" onchange="vaild_language()">
+                        <option value="javascript" selected>javascript</option>
                         <option value="C++">C++</option>
                         <option value="Python2">Python2</option>
                         <option value="Python3">Python3</option>
@@ -90,12 +91,18 @@
                 </div>
                 <div class="input_box">
                     <div id="text_size">
-                        <textarea rows="22" cols="50" spellcheck="false" id="text_font"></textarea>
+                            <textarea rows="22" cols="50" spellcheck="false" id="text_font">/* please finish the function and return result.*/
+/**
+* @param {number[]} nums
+* @return {number}
+*/
+function solution(nums)
+{
+
+};</textarea>
                     </div>
                     <div>
-                        <a href="judge.html">
-                            <input type="button" value="submit" id="sub">
-                        </a>
+                        <input type="button" value="submit" id="sub" onclick="show(6)">
                     </div>
                 </div>
             </div>

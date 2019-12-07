@@ -1,6 +1,8 @@
 <html>
     <head>
-            <link rel="stylesheet" type="text/css" href="../css/new_sheet.css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+        <link rel="stylesheet" type="text/css" href="../css/new_sheet.css" />
+        <script src="../javascript/script.js"></script>
     </head>
     <body id="problem_body">
         <div class="navigation">
@@ -36,39 +38,43 @@
         <div class="fill_div"></div>
         <div class="container">
             <div class="problem_dis">
-                <li class="A_font" id="li_height">     P1005     Grid</li>
+                <li class="A_font" id="li_height">     P1005     Plus One</li>
                 <div>
                 <li class="A_font list_ok" id="word_color">Description</li>
-                    <li class="E_font" id="li_height">There is a grid size of 1*N. The spanning tree of the grid connects all the vertices
-                    <li class="E_font" id="li_height">of the grid only with the edges of the grid, </li>
-                    <li class="E_font" id="li_height">and every vertex has only one path to any other vertex. </li>
-                    <li class="E_font" id="li_height">Your task is to find out how many different spanning trees in a given grid.</li>
+                    <li class="E_font" id="li_height">Given a non-empty array of digits representing a non-negative integer, plus one to the integer</li>
+                    <li class="E_font" id="li_height">The digits are stored such that the most significant digit is at the head of the list,</li>
+                    <li class="E_font" id="li_height">and each element in the array contain a single digit.</li>
+                    <li class="E_font" id="li_height">You may assume the integer does not contain any leading zero, except the number 0 itself.</li>
                 </div>
                 <div>
                     <li class="A_font list_ok" id="word_color">Input</li>
-                    <li class="E_font" id="li_height">Every line there is a single integer N(0 < N <= 1000000000), a line of 0 represents the end of the input.</li>
+                    <li class="E_font" id="li_height">An array</li>
                 </div>
                 <div>
                 </div>
                 <li class="A_font list_ok" id="word_color">Output</li>
-                <li class="E_font" id="li_height">Every line you should only print the result, as the result may be very large, please module it with 1000000007.
-                    </li>
+                <li class="E_font" id="li_height">An array</li>
                 <div class="example">
                     <li class="E_font" id="example_color">Sample Input 1</li>
                     <div class="example_box">
 <pre>
-    1
-    2
-    0</pre>
+    [1,2,3]</pre>
                     </div>
                 </div>
                 <div class="example">
                     <li class="E_font" id="example_color">Sample Output 1</li>
                     <div class="example_box">
 <pre>
-    4
-    15</pre>
+    [1,2,4]</pre>
                     </div>
+                </div>
+                <div class="test">
+                    <div>
+                        <input type="checkbox" name = "test" id="test"  onclick="test_box(5)">
+                            <label for="test">Custom test cases</label>
+                    </div>
+                    <div id="test_box"></div>
+                    <script id="code"></script>
                 </div>
             </div>
             <br/>
@@ -78,8 +84,8 @@
                     <p>Language:</p>
                 </div>
                 <div class="language">
-                    <select name="language" class="selection">
-                        <option value="C" selected>C</option>
+                    <select name="language" class="selection" id="select" onchange="vaild_language()">
+                        <option value="javascript" selected>javascript</option>
                         <option value="C++">C++</option>
                         <option value="Python2">Python2</option>
                         <option value="Python3">Python3</option>
@@ -87,12 +93,18 @@
                 </div>
                 <div class="input_box">
                     <div id="text_size">
-                        <textarea rows="22" cols="50" spellcheck="false" id="text_font"></textarea>
+                            <textarea rows="22" cols="50" spellcheck="false" id="text_font">/* please finish the function and return result.*/
+/**
+* @param {number[]} digits
+* @return {number[]}
+*/
+function solution(digits)
+{
+
+};</textarea>
                     </div>
                     <div>
-                        <a href="judge.html">
-                            <input type="button" value="submit" id="sub">
-                        </a>
+                        <input type="button" value="submit" id="sub" onclick="show(5)">
                     </div>
                 </div>
             </div>

@@ -665,3 +665,59 @@ code{
 .submit{
     margin-top: 5%;
 }
+.test{
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+#test_box{
+    padding-top: 2%;
+}
+.test_button{
+    background-color:white;align-self:center;font-size:1rem;width:8rem;border-radius:5%;height:3rem;
+    border: 1.2px solid rgb(214, 214, 214);
+}
+.test_button:hover{
+    background-color: rgb(235, 233, 233);
+    border-color: rgb(143, 142, 142);
+}
+#locksc{
+    position: absolute;
+    top:0;
+    left:0;
+    background:#000;
+    filter:alpha(opacity=30);
+    opacity: 0.3;
+    display: none;
+    z-index: 900;
+}
+#login{
+    border:1px solid #ccc;
+    background: #fff;
+    width: 350px;
+    height: 250px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    display: none;
+    z-index: 901;
+    position: absolute;
+}
+#login h2 img{
+    float:right;
+    position: relative;
+    top:0px;
+    right:8px;
+    cursor:pointer;
+}
+#close{
+    transform: scale(1);
+}
+.lg_button{
+    background-color:white;align-self:center;font-size:1rem;width:8rem;border-radius:5%;height:2rem;
+    display: inline-block;
+    border: 1.2px solid rgb(214, 214, 214);
+}
+.lg_button:hover{
+    background-color: rgb(235, 233, 233);
+    border-color: rgb(143, 142, 142);
+}

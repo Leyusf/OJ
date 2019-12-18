@@ -1,32 +1,46 @@
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-        <link rel="stylesheet" type="text/css" href="../css/new_sheet.css" />
-        <script src="../javascript/script.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta  name="keywords" content="good,learning,web,OJ,P,study,improve,question">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="../js/jquery-3.4.1.js"></script>
+        <script src="../javascript/myjq.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="../js/bootstrap.bundle.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/new_sheet.css"/>
+        <title>P1008</title>
     </head>
-    <body id="problem_body">
-        <div class="navigation">
-            <table>
-                    <tr>
-                            <td class="GLW">Good Learning Web</td>
-                            <td align="center"class="menu">
-                                <a href="../index.html" class="no_underline"><div>HOME</div></a>
-                            </td>
-                            <td align="center" class="menu">
-                                <a href="problem1.html" class="no_underline"><div>Problems</div></a>
-                            </td>
-                            <td align="center" class="menu">
-                                <a href="learning_act.html" class="no_underline"><div>Learning</div></a>
-                            </td>
-                            <td align="center" class="menu">
-                                <a href="user_act.html" class="no_underline"><div>User</div></a>
-                            </td>
-                        </tr>
-            </table>
-        </div>
-        <div>
-            <a name="top"></a>
-        </div>
+    <body>
+            <nav class="navbar bg-nav  navbar-expand-md navbar-dark fixed-top">
+                    <a class="navbar-brand" href="#">Good Learning Web</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav nav_font">
+                            <div class="menu">
+                        <li class="nav-item li_ok">
+                                <a class="nav-link" href="../index.html" class="no_underline">Home</a>
+                        </li></div>
+                        <div class="menu">
+                        <li class="nav-item li_ok">
+                            <a class="nav-link" href="problem1.html" class="no_underline">Problems</a>
+                       </li></div>
+                       <div class="menu">
+                        <li class="nav-item li_ok">
+                            <a class="nav-link" href="learning_act.html" class="no_underline">Learning</a>
+                        </li></div>
+                        <div class="menu">
+                        <li class="nav-item li_ok">
+                            <a class="nav-link" href="user_neg.html" class="no_underline">User</a>
+                        </li>
+                        </div>
+                    </ul>
+                </div> 
+            </div>
+            </div>
+            </nav>
         <br/>
         <br/>
         <br/>
@@ -35,7 +49,6 @@
         <br/>
         <br/>
         <br/>
-        <div class="fill_div"></div>
         <div class="container">
             <div class="problem_dis">
                 <li class="A_font" id="li_height">     P1008     Remove Duplicates from Sorted Array</li>
@@ -70,11 +83,11 @@
                 </div>
                 <div class="test">
                     <div>
-                        <input type="checkbox" name = "test" id="test"  onclick="test_box(8)">
+                        <input type="checkbox" name = "test" id="test">
                             <label for="test">Custom test cases</label>
                     </div>
                     <div id="test_box"></div>
-                    <script id="code"></script>
+                    <div id="code"></div>
                 </div>
             </div>
             <br/>
@@ -103,17 +116,10 @@ function solution(nums)
 
 };</textarea>
                     </div>
-                    <div>
-                        <input type="button" value="submit" id="sub" onclick="show(8)">
-                    </div>
+                    <center>
+                        <input type="button" value="submit" id="sub">
+                    </center>
                 </div>
-            </div>
-        </div>
-        <div class="fill_div up">
-            <div class="margin_r">
-                <a href="#top">
-                    <img src="../img/up.png" alt="go to top" title="go to top" align ="right" width="50" height="50" transition=" all 0.6s" >
-                </a>
             </div>
         </div>
         <br/>

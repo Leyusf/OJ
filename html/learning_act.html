@@ -1,30 +1,44 @@
 <html>
     <head>
-            <link rel="stylesheet" type="text/css" href="../css/new_sheet.css" />
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta  name="keywords" content="good,learning,web,OJ,P,study,improve,question">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <script src="../js/jquery-3.4.1.js"></script>
+            <link rel="stylesheet" href="../css/bootstrap.min.css">
+            <script src="../js/bootstrap.bundle.js"></script>
+            <script src="../js/bootstrap.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../css/new_sheet.css"/>
     </head>
     <body>
-        <div class="navigation">
-            <table>
-                <tr>
-                    <td class="GLW">Good Learning Web</td>
-                    <td align="center" class="menu">
-                        <a href="../index.html" class="no_underline"><div>HOME</div></a>
-                    </td>
-                    <td align="center" class="menu">
-                        <a href="problem1.html" class="no_underline"><div>Problems</div></a>
-                    </td>
-                    <td align="center" class="menu">
-                        <a href="learning_act.html" class="no_underline"><div>Learning</div></a>
-                    </td>
-                    <td align="center" class="menu">
-                        <a href="user_act.html" class="no_underline"><div>User</div></a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <a name="top"></a>
-        </div>
+            <nav class="navbar bg-nav  navbar-expand-md navbar-dark fixed-top">
+                    <a class="navbar-brand" href="#">Good Learning Web</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav nav_font">
+                            <div class="menu">
+                        <li class="nav-item li_ok">
+                                <a class="nav-link" href="../index.html" class="no_underline">Home</a>
+                        </li></div>
+                        <div class="menu">
+                        <li class="nav-item li_ok">
+                            <a class="nav-link" href="problem1.html" class="no_underline">Problems</a>
+                       </li></div>
+                       <div class="menu">
+                        <li class="nav-item li_ok">
+                            <a class="nav-link" href="learning_act.html" class="no_underline">Learning</a>
+                        </li></div>
+                        <div class="menu">
+                        <li class="nav-item li_ok">
+                            <a class="nav-link" href="user_neg.html" class="no_underline">User</a>
+                        </li>
+                        </div>
+                    </ul>
+                </div> 
+            </div>
+            </div>
+            </nav>
         <br/>
         <br/>
         <br/>
@@ -33,7 +47,6 @@
         <br/>
         <br/>
         <br/>
-        <div class="fill_div"></div>
         <div class="container">
             <div class="card">
                 <div class="card_header A_font">
@@ -57,7 +70,7 @@ There are three laws:<br/>
                     <div class="card_speaker">
                         <div class="speaker">
                             <small>
-                                <a href="user_act.html" class="C_font">
+                                <a href="ythy.html" class="C_font">
                                     ythy
                                 </a>
                                 @<span>2019-11-2 19:50</span>
@@ -71,15 +84,15 @@ There are three laws:<br/>
                     <p class="content p_ok learning">
 In a function, if assigning a value to a list which as an argument will result in a new copy.<br/>
 e.g:<br/></p>
-            <code><pre>
-                def function(nums):
-                    tmp = [1,2]
-                    print(id(tmp))
-                    nums = tmp[:]
-                    print(id(nums))
-                    nums[:] = tmp[:]
-                    print(id(nums))</pre>
-            </code><br/>
+            <center><pre>
+def function(nums):
+    tmp = [1,2]
+    print(id(tmp))
+    nums = tmp[:]
+    print(id(nums))
+    nums[:] = tmp[:]
+    print(id(nums))</pre>
+            </center><br/>
                     <p class="content p_ok learning">
 The first id is a1, the second id is a2 and the third id is a1.<br/>
 Therefore, if we want to give a value to nums,<br/>
@@ -88,7 +101,7 @@ we should use nums[:], not num.<br/>
                     <div class="card_speaker">
                         <div class="speaker">
                             <small>
-                                <a href="user_act.html" class="C_font">
+                                <a href="ythy.html" class="C_font">
                                     ythy
                                 </a>
                                 @<span>2019-11-4 16:21</span>
@@ -108,19 +121,19 @@ Assumed the number of k just appeared once and the array has n numbers.<br/>
 Then a1^a2^a3...^an = k<br/>
 Because same numbers will be 0 and finilly the formula will be 0^k = k<br/>
 Code:<br/></p>
-            <code><pre>
-                int FindOnceNumber (int a[])
-                {
-                int res = 0;
-                for (int x:a)
-                    res = res ^ x;
-                return res;
-                }
-            </pre></code>
+            <center><pre>
+int FindOnceNumber (int a[])
+{
+    int res = 0;
+    for (int x:a)
+        res = res ^ x;
+    return res;
+}
+</pre></center>
                     <div class="card_speaker">
                         <div class="speaker">
                             <small>
-                                <a href="user_act.html" class="C_font">
+                                <a href="ythy.html" class="C_font">
                                     ythy
                                 </a>
                                 @<span>2019-11-6 16:30</span>
@@ -128,13 +141,6 @@ Code:<br/></p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="fill_div up">
-            <div class="margin_r">
-                <a href="#top">
-                    <img src="../img/up.png" alt="go to top" title="go to top" align ="right" width="50" height="50" transition=" all 0.6s">
-                </a>
             </div>
         </div>
     </div>

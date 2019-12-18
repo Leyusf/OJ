@@ -1,61 +1,75 @@
 <html>
-    <head>
-        <meta http-equiv="refresh" content="2;url=no_way.html">
-        <link rel="stylesheet" type="text/css" href="../css/new_sheet.css" />
-    </head>
-    <body id="problem_body">
-        <div class="navigation">
-            <table>
-                <tr>
-                    <td class="GLW">Good Learning Web</td>
-                    <td align="center"class="menu">
-                        <a href="../index.html" class="no_underline"><div>HOME</div></a>
-                    </td>
-                    <td align="center" class="menu">
-                        <a href="problem1.html" class="no_underline"><div>Problems</div></a>
-                    </td>
-                    <td align="center" class="menu">
-                        <a href="learning_act.html" class="no_underline"><div>Learning</div></a>
-                    </td>
-                    <td align="center" class="menu">
-                        <a href="user_act.html" class="no_underline"><div>User</div></a>
-                    </td>
-                </tr>
-            </table>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../javascript/myjq.js"></script>
+    <script src="../javascript/worker.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/new_sheet.css" />
+    <title>Judge</title>
+</head>
+<body>
+    <nav class="navbar bg-nav  navbar-expand-md navbar-dark fixed-top"><a class="navbar-brand" href="#">Good Learning
+            Web</a><button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav nav_font">
+                <div class="menu">
+                    <li class="nav-item li_ok"><a class="nav-link" href="../index.html" class="no_underline">Home</a>
+                    </li>
+                </div>
+                <div class="menu">
+                    <li class="nav-item li_ok"><a class="nav-link" href="problem1.html"
+                            class="no_underline">Problems</a></li>
+                </div>
+                <div class="menu">
+                    <li class="nav-item li_ok"><a class="nav-link" href="learning_act.html"
+                            class="no_underline">Learning</a></li>
+                </div>
+                <div class="menu">
+                    <li class="nav-item li_ok"><a class="nav-link" href="user_neg.html" class="no_underline">User</a>
+                    </li>
+                </div>
+            </ul>
         </div>
-        <div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <div>
-            <pre class="A_font" id="color_font_r">            Judging</pre>
-            <div class="judge_block">
-                    <img class="rotate" src="../img/loading.png" alt="loading" title="loading">
-            </div>
-            <div class="judge_block">
-                <img class="rotate" src="../img/loading.png" alt="loading" title="loading">
-            </div>
-            <div class="judge_block">
-                <img class="rotate" src="../img/loading.png" alt="loading" title="loading">
-            </div>
-            <div class="judge_block">
-                    <img class="rotate" src="../img/loading.png" alt="loading" title="loading">
-            </div>
         </div>
-        <div class="D_font" >
-            <p id="text_pos">
-                powered by Leyu ZHANG
-            </p>
         </div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-    </body>
-</html>
+    </nav><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="head">head</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body"><pre id="answer_code"></pre></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+            </div>
+       
+          </div>
+        </div>
+      </div>
+    <div id="answer" class="container">
+        <div class="progress" style="height:30px">
+            <div class="progress-bar bg-success" style="width:10%"></div>
+            <br>
+            <div class="progress-bar bg-danger" style="width:90%"></div>
+        </div> <br>
+        <div class="row">
+            <div class="col-lg-4 row">
+                
+                <div class="col-lg-6"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    check answer
+                  </button></div>
+                  <div id="time" class="col-md-6"></div>
+            </div>
+            <div class="col-md-8"><pre id="result"></pre></div>
+        </div>
+    </div>
+    <script id="test5"></script>
+</body></html>

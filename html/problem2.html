@@ -1,84 +1,76 @@
 <html>
     <head>
-            <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-
-            <link rel="stylesheet" type="text/css" href="../css/new_sheet.css" />
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta  name="keywords" content="good,learning,web,OJ,P,study,improve,question">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <script src="../js/jquery-3.4.1.js"></script>
+            <script src="../javascript/search.js"></script>
+            <script src="../javascript/auto.js"></script>
+            <link rel="stylesheet" href="../css/bootstrap.min.css">
+            <script src="../js/bootstrap.bundle.js"></script>
+            <script src="../js/bootstrap.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="../css/new_sheet.css"/>
     </head>
     <body id="problem_body">
-        <div class="navigation">
-            <table>
-                    <tr>
-                            <td class="GLW">Good Learning Web</td>
-                            <td align="center"class="menu">
-                                <a href="../index.html" class="no_underline"><div>HOME</div></a>
-                            </td>
-                            <td align="center" class="menu">
-                                <a href="problem1.html" class="no_underline"><div>Problems</div></a>
-                            </td>
-                            <td align="center" class="menu">
-                                <a href="learning_act.html" class="no_underline"><div>Learning</div></a>
-                            </td>
-                            <td align="center" class="menu">
-                                <a href="user_act.html" class="no_underline"><div>User</div></a>
-                            </td>
-                        </tr>
-            </table>
-        </div>
-        <div>
-            <a name="top"></a>
-        </div>
+            <nav class="navbar bg-nav  navbar-expand-md navbar-dark fixed-top">
+                    <a class="navbar-brand" href="#">Good Learning Web</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav nav_font">
+                            <div class="menu">
+                        <li class="nav-item li_ok">
+                                <a class="nav-link" href="../index.html" class="no_underline">Home</a>
+                        </li></div>
+                        <div class="menu">
+                        <li class="nav-item li_ok">
+                            <a class="nav-link" href="problem1.html" class="no_underline">Problems</a>
+                       </li></div>
+                       <div class="menu">
+                        <li class="nav-item li_ok">
+                            <a class="nav-link" href="learning_act.html" class="no_underline">Learning</a>
+                        </li></div>
+                        <div class="menu">
+                        <li class="nav-item li_ok">
+                            <a class="nav-link" href="user_neg.html" class="no_underline">User</a>
+                        </li>
+                        </div>
+                    </ul>
+                </div> 
+            </div>
+            </div>
+            </nav>
         <br/>
         <br/>
         <br/>
         <br/>
         <br/>
         <br/>
-        <div class="fill_div"></div>
-        <div class="container"">
-            <div class="column">
-                <a href="problem1.html" class="no_underline">
-                    <div class="number_block negative number">
-                        <p>«</p>
-                    </div>
-                </a>
-                <a href="problem1.html" class="no_underline">
-                    <div class="number_block negative number">
-                        <p>1</p>
-                    </div>
-                </a>
-                <div class="number_block active number">
-                    <p>2</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="pagination pagination-lg">
+                        <li class="page-item li_ok"><a class="page-link" href="problem1.html">«</a></li> 
+                        <li class="page-item li_ok"><a class="page-link" href="problem1.html">1</a></li>
+                        <li class="page-item disabled li_ok"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item li_ok"><a class="page-link" href="problem3.html">3</a></li>
+                        <li class="page-item li_ok"><a class="page-link" href="problem4.html">4</a></li>
+                        <li class="page-item li_ok"><a class="page-link" href="problem5.html">5</a></li>
+                        <li class="page-item li_ok"><a class="page-link" href="problem3.html">»</a></li>
+                    </ul>
                 </div>
-                <a href="problem3.html" class="no_underline">
-                    <div class="number_block negative number">
-                        <p>3</p>
+                <div id="sea" class="offset-md-2 col-md-4">
+                    <div class="search_box">
+                        <input id="search" type="text" placeholder="P1001 Enter">
+                        <div class="search"></div>
                     </div>
-                </a>
-                <a href="problem4.html" class="no_underline">
-                    <div class="number_block negative number">
-                        <p>4</p>
-                    </div>
-                </a>
-                <a href="problem5.html" class="no_underline">
-                    <div class="number_block negative number">
-                        <p>5</p>
-                    </div>
-                </a>
-                <a href="problem3.html" class="no_underline">
-                    <div class="number_block negative number">
-                        <p>»</p>
-                    </div>
-                </a>
+                </div>
             </div>
-            <div class="fill_div"></div>
-            <div class="fill_div"></div>
-            <div class="search_box">
-                <input type="text" placeholder="Search...">
-                <div class="search"></div>
-            </div>
-            <br/>
-            <br/>
-            <br/>
+            <br>
+            <br>
+            <br>
+            <div class="row">
             <div class="problem_box">
                 <div class="list_box" id="color1">
                     <pre class="problem_list" id="problem_list_word">    Problem List</pre>
@@ -102,7 +94,7 @@
                         <pre id="problem_list_word">   P1011</pre>
                     </div>
                     <div class="problem_list no_underline">
-                        <a href="P1011.html" id="color_b">
+                        <a href="no_way.html" id="color_b">
                             <pre id="problem_list_word">City Hall</pre>
                         </a>
                     </div>
@@ -120,7 +112,7 @@
                         <pre id="problem_list_word">   P1012</pre>
                     </div>
                     <div class="problem_list no_underline">
-                        <a href="P1012.html" id="color_b">
+                        <a href="no_way.html" id="color_b">
                             <pre id="problem_list_word">Candy Sharing Game</pre>
                         </a>
                     </div>
@@ -279,21 +271,11 @@
                 </div>
             </div>
         </div>
-        <div class="fill_div up">
-            <div class="margin_r">
-                <a href="#top">
-                    <img src="../img/up.png" alt="go to top" title="go to top" align ="right" width="50" height="50" transition=" all 0.6s" >
-                </a>
-            </div>
-        </div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <div class="D_font" >
-            <p id="text_pos">
-                powered by Leyu ZHANG
-            </p>
-        </div>
-    </body>
+    </div>
+    <div class="D_font" >
+        <p id="text_pos">
+            powered by Leyu ZHANG
+        </p>
+    </div>
+</body>
 </html>

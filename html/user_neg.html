@@ -1,53 +1,120 @@
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-        <link rel="stylesheet" type="text/css" href="../css/new_sheet.css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta  name="keywords" content="good,learning,web,OJ,P,study,improve,question">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="../js/jquery-3.4.1.js"></script>
         <script src="../javascript/script.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="../js/bootstrap.bundle.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/new_sheet.css"/>
     </head>
     <body class="bgc_gainsboro">
-        <div class="navigation">
-            <table>
-                <tr>
-                    <td class="GLW">Good Learning Web</td>
-                    <td align="center" class="menu">
-                        <a href="index_neg.html" class="no_underline"><div>HOME</div></a>
-                    </td>
-                    <td align="center" class="menu">
-                        <a href="problem1_neg.html" class="no_underline"><div>Problems</div></a>
-                    </td>
-                    <td align="center" class="menu">
-                        <a href="learning_neg.html" class="no_underline"><div>Learning</div></a>
-                    </td>
-                    <td align="center" class="menu">
-                        <a href="user_neg.html" class="no_underline"><div>User</div></a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <div id = "locksc"></div>
-            <div id = "login">
-                <div><h2>User Login<img src="../img/close.png" title="close" alt="close" id="close" onclick="img_close()"></h2></div>
-                <form name="login">
-                    <div>Account ：<input type="test" name="account" id="account"></div>
-                    <br>
-                    <div>Password：<input type="password" name="account" id="password"></div>
-                    <br>
-                    <input type="button" value="Login" class="lg_button" onclick="login_account()"><br><br><input type="button" value="Register" class="lg_button" onclick="register()">
+        <nav class="navbar bg-nav  navbar-expand-md navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">Good Learning Web</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav nav_font">
+                    <div class="menu">
+                <li class="nav-item li_ok">
+                        <a class="nav-link" href="../index.html" class="no_underline">Home</a>
+                </li></div>
+                <div class="menu">
+                <li class="nav-item li_ok">
+                    <a class="nav-link" href="problem1.html" class="no_underline">Problems</a>
+               </li></div>
+               <div class="menu">
+                <li class="nav-item li_ok">
+                    <a class="nav-link" href="learning_act.html" class="no_underline">Learning</a>
+                </li></div>
+                <div class="menu">
+                <li class="nav-item li_ok">
+                    <a class="nav-link" href="#" class="no_underline">User</a>
+                </li>
+                </div>
+            </ul>
+        </div> 
+    </div>
+    </div>
+    </nav>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Sign up</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="was-validated">
+                    <div class="form-group">
+                      <label for="email">Email address:</label>
+                      <input type="text" class="form-control" id="email" spellcheck="false" placeholder="Email" pattern="^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$"  required/>
+                      <div id="em" class="invalid-feedback">invalid-Email</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="account">Account:</label>
+                        <input type="text" class="form-control" id="acc" spellcheck="false" placeholder="Name:4-8" pattern="[A-Za-z0-9]{4,8}"  required/>
+                        <div id="ac" class="invalid-feedback">invalid-Account</div>
+                      </div>
+                    <div class="form-group">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="Password:more than 6" pattern="[A-Za-z0-9]{6,999}"  required/>
+                      <div id="pw" class="invalid-feedback">invalid-Password</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password Again:</label>
+                        <input type="password" class="form-control danger" id="again-pwd" spellcheck="false" placeholder="Enter password" pattern=""  required/>
+                        <div id="pwda" class="invalid-feedback">different Password</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="rand">Verification code: <img id="img" class="img_ok" src="#"></label>
+                        <input type="text" class="form-control danger" id="vc" placeholder="Enter Verification code" pattern=""  required/>
+                        <div id="ver" class="invalid-feedback">invalid-Verification</div>
+                        <div></div>
+                    </div>
                 </form>
             </div>
-            <div class="fill_div_user go_center">
-                <span>You are not logged in!</span>
+            <div class="modal-footer">
+              <input type="submit" id="sign" value="Sign up" class="btn btn-primary" onclick="sub();"/></input>
             </div>
-            <br/>
-            <div class="fill_div_user go_center">
-                <a onclick="lock()" class="no_underline login"><span>Login</span></a> 
-            </div>
+       
+          </div>
         </div>
+      </div>
+    <div class="container">
+        <div class="offset-md-2 col-md-8">
+        <form>
+            <div class="form-group">
+                <label for="account">Account:</label>
+                <input type="text" class="form-control" id="accl" placeholder="Name">
+              </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwdl" placeholder="Enter password">
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-2">
+                    <button type="submit" class="btn btn-primary" onclick="login_account()">Login</button>
+                </div>
+                <div class="offset-2 col-2">
+                    <button type="button" id="signup" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Sign up</button>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
     <div class="D_font" >
         <p id="text_pos">
 powered by Leyu ZHANG

@@ -1,18 +1,23 @@
 body{
     margin: 0px;
 }
-.navigation{
+.bg-nav{
     background-color:#008cba ;
-    width:100%; 
-    height:4rem;
-    position:fixed;
-    z-index:999;
+}
+.nav_font{
+    font-size: 1.6rem;
+    font-style:italic;
+    color: chocolate;
+    border-bottom: 1px #888;
+}
+.navbar-brand{
+    font-size: 1.6rem;
 }
 pre{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 table{
-    font-size: 1.4rem;
+    font-size: 1.0rem;
     border: none;
     width: 100%;
     height: 100%;
@@ -49,26 +54,14 @@ td>a>div{
     text-decoration: none;
     color: floralwhite;
 }
-.GLW{
-    width: 50%;
-    font-size: 1.90rem;
-}
 #problem_body{
     background-color: rgba(7, 7, 7, 0.055);
 }
-.menu:hover>a{
-    color: rgb(181, 232, 233);
+.menu:hover{
+    color: rgb(202, 236, 236);
 }
 .menu:hover{
     background-color: #0079a1;
-}
-.fill_div{
-    width:15%;
-    display: inline-block;
-}
-.container{
-    width: 70%;
-    display: inline-block;
 }
 .card{
     position:relative;
@@ -84,10 +77,10 @@ td>a>div{
     background-color:rgba(0,0,0,.03);
 }
 .A_font{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .B_font{
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     color: #596063;
 }
 .C_font{
@@ -97,9 +90,14 @@ td>a>div{
     border-bottom: 1px #888;
 }
 .D_font{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-style:italic;
     color: #888;
+}
+.li_ok{
+    text-align: center;
+    list-style: none;
+    margin:0px;
 }
 li{
     text-align: center;
@@ -113,7 +111,7 @@ title{
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 hr {
     filter: alpha(opacity=100,finishopacity=0,style=3); 
@@ -157,6 +155,16 @@ div img{
 div img:hover{  
     transform: scale(1.4);
      
+}
+.page-item{
+    border-radius: 10%;
+    background-color: #008cbd;
+    color:whitesmoke;
+}
+.disabled{ 
+    border-radius: 10%;
+    background-color: white;
+    color:  #888;
 }
 .column{
     width:40%;
@@ -206,7 +214,7 @@ div img:hover{
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 40px;
     width: 50px;
     height: 50px;
     background:#008cbd;
@@ -450,6 +458,7 @@ div img:hover{
     color: rgb(168, 0, 93);
 }
 .language{
+    margin-top: 10px;
     height: 3rem;
     width: 20%;
     margin-left: 2rem;
@@ -457,6 +466,9 @@ div img:hover{
     display: inline-block;
 }
 .selection{
+    background-color: rgb(243, 241, 241);
+    border-radius: 5%;
+    margin-top: 5px;
     width: 10rem;
     height: 2rem;
 }
@@ -467,6 +479,7 @@ div img:hover{
 #text_size{
     width: 100%;
     margin-left: 2rem;
+    padding-right: 2rem;
 }
 #text_font{
     font-size: 1.6rem;
@@ -485,7 +498,7 @@ div img:hover{
     color: white;
     width: 6rem;
     background-color: rgb(93, 93, 253);
-    margin-left: 50%;
+    margin-left: 10%;
     border: 2px solid rgb(93, 93, 253);
     border-radius: 10%;
 }
@@ -535,14 +548,8 @@ div img:hover{
     transform: scale(1.0); 
 }
 .fill_div_user{
-    margin-left: 5%;
-    margin-top: 1%;
-    padding-top: 1%;
-    padding-bottom: 1%;
     box-shadow:6px 6px 5px silver;
     background-color:whitesmoke;
-    width:90%;
-    align-self: center;
 }
 .bgc_gainsboro{
     background-color:gainsboro;
@@ -572,17 +579,12 @@ div img:hover{
     color: rgb(235, 0, 0);
 }
 .fill_div_sides{
-    margin-left: 5%;
-    margin-top: 1%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    width:25%;
-    display: inline-block;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-shadow:6px 6px 5px silver;
+    background-color:whitesmoke;
 }
 .fill_div_side{
-    margin-top: 1%;
-    padding-top: 1%;
-    padding-bottom: 1%;
     box-shadow:6px 6px 5px silver;
     background-color:whitesmoke;
 }
@@ -599,6 +601,7 @@ div img:hover{
     display: inline-block;
 }
 .p_user{
+    padding-top: 5%;
     margin-left: 10%;
     white-space: initial;
     font-size: 1.2rem;
@@ -626,22 +629,10 @@ span{
     text-align: left;
 }
 .logout{
-    background-color: #38a1d1b7;
-    margin-left: 35%;
     margin-bottom: 5%;
     border-radius: 5%;
-    border: 1px solid black;
-    padding-top: 3%;
     text-align: center;
     font-size: 1.5rem;
-    width: 30%;
-    height: 5%;
-}
-.logout a{
-    color: rgb(49, 48, 48);
-}
-.logout a:hover{
-    color: rgb(48, 48, 47);
 }
 #bg{
     background-color: whitesmoke;
@@ -680,38 +671,6 @@ code{
     background-color: rgb(235, 233, 233);
     border-color: rgb(143, 142, 142);
 }
-#locksc{
-    position: absolute;
-    top:0;
-    left:0;
-    background:#000;
-    filter:alpha(opacity=30);
-    opacity: 0.3;
-    display: none;
-    z-index: 900;
-}
-#login{
-    border:1px solid #ccc;
-    background: #fff;
-    width: 350px;
-    height: 250px;
-    font-size: 14px;
-    color: #666;
-    text-align: center;
-    display: none;
-    z-index: 901;
-    position: absolute;
-}
-#login h2 img{
-    float:right;
-    position: relative;
-    top:0px;
-    right:8px;
-    cursor:pointer;
-}
-#close{
-    transform: scale(1);
-}
 .lg_button{
     background-color:white;align-self:center;font-size:1rem;width:8rem;border-radius:5%;height:2rem;
     display: inline-block;
@@ -720,4 +679,11 @@ code{
 .lg_button:hover{
     background-color: rgb(235, 233, 233);
     border-color: rgb(143, 142, 142);
+}
+#allmap {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin:0;
+    font-family:"微软雅黑";
 }

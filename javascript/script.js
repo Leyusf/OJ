@@ -13,7 +13,7 @@ function login_account(){
             alert("Wrong password!");
     }
     else{
-        alert("The account did not exits");
+        alert("The account did not exist");
     }
 }
 function register(ac){ 
